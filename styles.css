@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#e66465, #9198e5);
+    
+}
+
+.calculator-grid{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(100px, auto) repeat(5,100px);
+    align-content:center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.display-output{
+    grid-column: 1/-1;
+    background-color: rgba(255,255,255,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.allClearButton{
+    grid-column: span 2;
+}
+
+.deleteButton{
+    grid-column: span 2;
+}
+
+.equalButton{
+    grid-column: span 2;
+}
